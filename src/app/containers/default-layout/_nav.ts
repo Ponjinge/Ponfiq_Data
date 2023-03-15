@@ -11,6 +11,12 @@ export const navItems: INavData[] = [
     }
   },
   {
+    name: 'NotreDashboard',
+    url: '/notreDashboard',
+    iconComponent: { name: 'cil-speedometer' },
+    
+  },
+  {
     title: true,
     name: 'Theme'
   },
