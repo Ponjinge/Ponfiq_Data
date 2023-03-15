@@ -30,6 +30,66 @@ export const navItems: INavData[] = [
     title: true
   },
   {
+    name: 'Ventes',
+    url: '/ventes',
+    iconComponent: { name: 'cil-dollar' },
+    children: [
+      {
+        name: "Tableau de bord de l'évolution des ventes",
+        url: '/ventes/tabBordVentes'
+      },
+    ]
+  },
+  {
+    name: 'Produits',
+    url: '/produits',
+    iconComponent: { name: 'cil-cursor' },
+    children: [
+      {
+        name: 'Tableau de bord des produits',
+        url: '/produits/tabBordProd'
+      },
+      {
+        name: 'Analyse par produit',
+        url: '/produits/analyseParProd'
+      },
+      {
+        name: 'Liaison entre produits',
+        url: '/produits/liaisonEntreProd'
+      },
+    ]
+  },
+  {
+    name: 'Clients',
+    url: '/clients',
+    iconComponent: { name: 'cil-contact' },
+    children: [
+      {
+        name: 'Tableau de bord des clients',
+        url: '/clients/tabBordCli'
+      },
+      {
+        name: 'Profil des clients',
+        url: '/clients/profilCli'
+      },
+    ]
+  },
+  {
+    name: 'Géolocalisation',
+    url: '/geoloc',
+    iconComponent: { name: 'cil-map' },
+    children: [
+      {
+        name: 'Carte globale des ventes',
+        url: '/geoloc/carteGlobVentes'
+      },
+      {
+        name: 'Analyse par ville',
+        url: '/geoloc/analyseVille'
+      },
+    ]
+  },
+  {
     name: 'Base',
     url: '/base',
     iconComponent: { name: 'cil-puzzle' },
@@ -115,6 +175,7 @@ export const navItems: INavData[] = [
       },
     ]
   },
+  
   {
     name: 'Forms',
     url: '/forms',

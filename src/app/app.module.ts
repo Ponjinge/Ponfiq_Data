@@ -45,6 +45,14 @@ import {
 } from '@coreui/angular';
 
 import { IconModule, IconSetService } from '@coreui/icons-angular';
+import { ProfilCliComponent } from './views/clients/profil-cli/profil-cli.component';
+import { TabBordCliComponent } from './views/clients/tab-bord-cli/tab-bord-cli.component';
+import { TabBordProdComponent } from './views/produits/tab-bord-prod/tab-bord-prod.component';
+import { AnalyseParProdComponent } from './views/produits/analyse-par-prod/analyse-par-prod.component';
+import { LiaisonProdComponent } from './views/produits/liaison-prod/liaison-prod.component';
+import { TabBordEvolVentesComponent } from './views/ventes/tab-bord-evol-ventes/tab-bord-evol-ventes.component';
+import { CarteGlobVentesComponent } from './views/geolocalisation/carte-glob-ventes/carte-glob-ventes.component';
+import { AnalyseParVilleComponent } from './views/geolocalisation/analyse-par-ville/analyse-par-ville.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -57,7 +65,7 @@ const APP_CONTAINERS = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, ...APP_CONTAINERS],
+  declarations: [AppComponent, ...APP_CONTAINERS, ProfilCliComponent, TabBordCliComponent, TabBordProdComponent, AnalyseParProdComponent, LiaisonProdComponent, TabBordEvolVentesComponent, CarteGlobVentesComponent, AnalyseParVilleComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
