@@ -1,0 +1,12 @@
+[
+    {"Cities":"Austin","Laundry Machines":"81","Laptops":"461","Phones":"759","Monitors":"1478","Charging Cables":"2558","Headphones":"2724","Batteries":"3092","Total":"11153"},
+    {"Cities":"Portland","Laundry Machines":"74","Laptops":"611","Phones":"929","Monitors":"1957","Charging Cables":"3113","Headphones":"3350","Batteries":"4019","Total":"14053"},
+    {"Cities":"Seattle","Laundry Machines":"114","Laptops":"689","Phones":"1159","Monitors":"2350","Charging Cables":"3644","Headphones":"3972","Batteries":"4625","Total":"16553"},
+    {"Cities":"Atlanta","Laundry Machines":"111","Laptops":"736","Phones":"1168","Monitors":"2312","Charging Cables":"3794","Headphones":"3929","Batteries":"4552","Total":"16602"},
+    {"Cities":"Dallas","Laundry Machines":"95","Laptops":"727","Phones":"1158","Monitors":"2343","Charging Cables":"3716","Headphones":"3926","Batteries":"4765","Total":"16730"},
+    {"Cities":"Boston","Laundry Machines":"131","Laptops":"926","Phones":"1560","Monitors":"3091","Charging Cables":"5052","Headphones":"5291","Batteries":"6477","Total":"22528"},
+    {"Cities":"New York City","Laundry Machines":"162","Laptops":"1217","Phones":"1920","Monitors":"3970","Charging Cables":"6310","Headphones":"6599","Batteries":"7754","Total":"27932"},
+    {"Cities":"Los Angeles","Laundry Machines":"221","Laptops":"1392","Phones":"2283","Monitors":"4566","Charging Cables":"7554","Headphones":"7868","Batteries":"9405","Total":"33289"},
+    {"Cities":"San Francisco","Laundry Machines":"323","Laptops":"2099","Phones":"3513","Monitors":"6874","Charging Cables":"11451","Headphones":"12016","Batteries":"13963","Total":"50239"},
+    {"Cities":"Total","Laundry Machines":"1312","Laptops":"8858","Phones":"14449","Monitors":"28941","Charging Cables":"47192","Headphones":"49675","Batteries":"58652","Total":"209079"}
+    ]
