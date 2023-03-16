@@ -26,6 +26,26 @@ const routes: Routes = [
           import('./views/dashboard/dashboard.module').then((m) => m.DashboardModule)
       },
       {
+        path: 'clients',
+        loadChildren: () =>
+          import('./views/clients/clients.module').then((m) => m.ClientsModule)
+      },
+      {
+        path: 'produits',
+        loadChildren: () =>
+          import('./views/produits/produits.module').then((m) => m.ProduitsModule)
+      },
+      {
+        path: 'ventes',
+        loadChildren: () =>
+          import('./views/ventes/ventes.module').then((m) => m.VentesModule)
+      },
+      {
+        path: 'geolocalisation',
+        loadChildren: () =>
+          import('./views/geolocalisation/geolocalisation.module').then((m) => m.GeolocalisationModule)
+      },
+      {
         path: 'theme',
         loadChildren: () =>
           import('./views/theme/theme.module').then((m) => m.ThemeModule)

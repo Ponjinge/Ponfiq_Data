@@ -4,19 +4,21 @@ import { CommonModule } from '@angular/common';
 import { BadgeModule, CardModule, GridModule } from '@coreui/angular';
 import { ChartjsModule } from '@coreui/angular-chartjs';
 
-import { ClientsRoutingModule } from './clients-routing.module';
+import { ProduitsRoutingModule } from './produits-routing.module';
 import { DocsComponentsModule } from '@docs-components/docs-components.module';
-import { ProfilCliComponent } from './profil-cli/profil-cli.component';
-import { TabBordCliComponent } from './tab-bord-cli/tab-bord-cli.component';
+import {AnalyseParProdComponent } from './analyse-par-prod/analyse-par-prod.component';
+import { LiaisonProdComponent } from './liaison-prod/liaison-prod.component';
+import { TabBordProdComponent } from './tab-bord-prod/tab-bord-prod.component';
 
 @NgModule({
   declarations: [
-    ProfilCliComponent,
-    TabBordCliComponent
+    AnalyseParProdComponent,
+    TabBordProdComponent,
+    LiaisonProdComponent
   ],
   imports: [
     CommonModule,
-    ClientsRoutingModule,
+    ProduitsRoutingModule,
     ChartjsModule,
     CardModule,
     GridModule,
@@ -24,5 +26,5 @@ import { TabBordCliComponent } from './tab-bord-cli/tab-bord-cli.component';
     DocsComponentsModule
   ]
 })
-export class ClientsModule {
-}
+export class ProduitsModule {}
+

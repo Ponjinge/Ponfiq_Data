@@ -1,16 +1,27 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { AnalyseParProdComponent } from './analyse-par-prod.component';
+import { CardModule, GridModule } from '@coreui/angular';
+import { ChartjsModule } from '@coreui/angular-chartjs';
+import { IconSetService } from '@coreui/icons-angular';
+import { iconSubset } from '../../../icons/icon-subset';
+import { DocsComponentsModule } from '../../../../components';
+import {AnalyseParProdComponent } from './analyse-par-prod.component';
 
-describe('AnalyseParProdComponent', () => {
+describe('ProfilCliComponent', () => {
   let component: AnalyseParProdComponent;
   let fixture: ComponentFixture<AnalyseParProdComponent>;
+  let iconSetService: IconSetService;
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [AnalyseParProdComponent],
+      imports: [GridModule, CardModule, DocsComponentsModule, ChartjsModule],
+      providers: [IconSetService]
+    }).compileComponents();
+  }));
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ AnalyseParProdComponent ]
-    })
-    .compileComponents();
+  beforeEach(() => {
+    iconSetService = TestBed.inject(IconSetService);
+    iconSetService.icons = { ...iconSubset };
 
     fixture = TestBed.createComponent(AnalyseParProdComponent);
     component = fixture.componentInstance;
@@ -21,3 +32,4 @@ describe('AnalyseParProdComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
