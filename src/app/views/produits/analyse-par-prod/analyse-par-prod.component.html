@@ -1,74 +1,123 @@
+<c-col xs="12">
+  <c-card class="àCentrer">
+  <c-card-header>
+    
+   <h1>Produits</h1>
 
+  </c-card-header>
+  <br>
+  <c-card-header>
+    
+    <h2>Analyse par Produit</h2>
+ 
+   </c-card-header>
+   <br>
+  <c-col xs="12" lg="6" class="àCentrer" >
+    <c-card class="mb-4">
+    <c-card-header>
+      <p>TEXT</p>
 
+    </c-card-header>
+  </c-card>
+  </c-col>
+
+  <c-row>
+    <c-col xs="12" lg="6">
+      <c-card class="mb-4">
+      <c-card-header>
+        <p>Des publicités pourront avoir un effet maximal si elles sont diffusées à 19h ou voire même à midi. Tous les produits ont leur sommet de ventes pour la journée à une heure près de ces heures-là. </p>
+        <p>La majeure partie du chiffre d'affaire est dûe à la vente d'ordinateurs portables, et ensuite à celle des téléphones portables. Notre recommandation serait de commencer à vendre plus d'ordinateurs et portables, et si besoin d'abandonner la vente du Vareebadd Phone et des machines à laver. </p>
+
+      </c-card-header>
+    </c-card>
+    <c-card class="mb-4">
+      <c-card-header>
+        quantité commandée par produit
+      </c-card-header>
+      <c-card-body>
+        <c-chart type="bar" [data]="chartBarData"></c-chart>
+      </c-card-body>
+    </c-card>
+  </c-col>
+  <c-col xs="12" lg="6">
+    <c-card class="mb-4">
+      <c-card-header>
+        Courbe de la quantité commandée par produit
+      </c-card-header>
+      <c-card-body>
+        <c-chart type="line" [data]="chartLineData"></c-chart>
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>
 <c-row>
-    <c-col xs="12">
-      <app-docs-callout>
-        Analyse par Produit
-        <br>
-      </app-docs-callout>
+  
+  <c-col xs="12" lg="6">
+    <c-card class="mb-4">
+      <c-card-header>
+        Courbe de du chiffre d'affaire par produit
+      </c-card-header>
+      <c-card-body>
+        <c-chart type="line" [data]="chartLineData"></c-chart>
+      </c-card-body>
+    </c-card>
+  </c-col>
+
+
+  <c-col xs="12" lg="6">
+    <c-card class="mb-4">
+    <c-card-header>
+      <p>TEXT</p>
+
+    </c-card-header>
+    </c-card>
     </c-col>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-        <c-card-header>
-          Bar Chart
-        </c-card-header>
-        <c-card-body>
-          <c-chart type="bar" [data]="chartBarData"></c-chart>
-        </c-card-body>
-      </c-card>
-    </c-col>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-        <c-card-header>
-          Line Chart
-        </c-card-header>
-        <c-card-body>
-          <c-chart type="line" [data]="chartLineData"></c-chart>
-        </c-card-body>
-      </c-card>
-    </c-col>
-  </c-row>
-  <c-row>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-        <c-card-header>
-          Doughnut Chart
-        </c-card-header>
-        <c-card-body>
-          <c-chart type="doughnut" [data]="chartDoughnutData"></c-chart>
-        </c-card-body>
-      </c-card>
-    </c-col>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-        <c-card-header>
-          Pie Chart
-        </c-card-header>
-        <c-card-body>
-          <c-chart type="pie" [data]="chartPieData"></c-chart>
-        </c-card-body>
-      </c-card>
-    </c-col>
-  </c-row>
-  <c-row>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-        <c-card-header>
-          Polar Area Chart
-        </c-card-header>
-        <c-card-body>
-          <c-chart type="polarArea" [data]="chartPolarAreaData"></c-chart>
-        </c-card-body>
-      </c-card>
-    </c-col>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-        <c-card-header>
-          Radar Chart
-        </c-card-header>
-        <c-card-body>
-          <c-chart type="radar" [data]="chartRadarData"></c-chart>
-        </c-card-body>
-      </c-card>
-    </c-col>
-  </c-row>
+
+  <c-col xs="12">
+  <c-card class="mb-4">
+    <c-card-header>
+      <strong>Angular Table</strong>
+    </c-card-header>
+    <c-card-body>
+     
+      <app-docs-example href="components/ventes">
+        <table cTable>
+          <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Class</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colSpan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          </tbody>
+        </table>
+      </app-docs-example>
+    </c-card-body>
+  </c-card>
+</c-col>
+</c-row>
+
+
+
+
+
+
