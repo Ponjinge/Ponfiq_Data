@@ -42,7 +42,7 @@ export const navItems: INavData[] = [
     children: [
       {
         name: "Tableau de bord de l'évolution des ventes",
-        url: '/ventes/tabBordVentes'
+        url: '/ventes/tab-bord-evol-ventes'
       },
     ]
   },
@@ -53,15 +53,15 @@ export const navItems: INavData[] = [
     children: [
       {
         name: 'Tableau de bord des produits',
-        url: '/produits/tabBordProd'
+        url: '/produits/tab-bord-prod'
       },
       {
         name: 'Analyse par produit',
-        url: '/produits/analyseParProd'
+        url: '/produits/analyse-par-prod'
       },
       {
         name: 'Liaison entre produits',
-        url: '/produits/liaisonEntreProd'
+        url: '/produits/liaison-prod'
       },
     ]
   },
@@ -72,11 +72,11 @@ export const navItems: INavData[] = [
     children: [
       {
         name: 'Tableau de bord des clients',
-        url: '/clients/tabBordCli'
+        url: '/clients/tab-bord-cli'
       },
       {
         name: 'Profil des clients',
-        url: '/clients/profilCli'
+        url: '/clients/profil-cli'
       },
     ]
   },
@@ -87,11 +87,11 @@ export const navItems: INavData[] = [
     children: [
       {
         name: 'Carte globale des ventes',
-        url: '/geoloc/carteGlobVentes'
+        url: '/geolocalisation/carte-glob-ventes'
       },
       {
         name: 'Analyse par ville',
-        url: '/geoloc/analyseVille'
+        url: '/geolocalisation/analyse-par-ville'
       },
     ]
   },

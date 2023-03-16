@@ -1,21 +1,33 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ChartsComponent } from './charts.component';
-
+import { TabBordEvolVentesComponent } from './tab-bord-evol-ventes/tab-bord-evol-ventes.component';
 const routes: Routes = [
   {
     path: '',
-    component: ChartsComponent,
     data: {
-      title: 'Charts',
+      title: 'Ventes',
     },
-  },
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'form-control'
+      },
+      {
+        path: 'tab-bord-evol-ventes',
+        component: TabBordEvolVentesComponent,
+        data: {
+          title: 'TabBordEvolVentes'
+        }
+      }
+    ]
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-export class ChartsRoutingModule {}
+export class VentesRoutingModule {}
 
