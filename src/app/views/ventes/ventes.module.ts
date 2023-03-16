@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { BadgeModule, CardModule, GridModule } from '@coreui/angular';
+import { BadgeModule, CardModule, GridModule, TableModule, UtilitiesModule } from '@coreui/angular';
 import { ChartjsModule } from '@coreui/angular-chartjs';
 
 import { VentesRoutingModule } from './ventes-routing.module';
@@ -19,6 +19,8 @@ import { TabBordEvolVentesComponent } from './tab-bord-evol-ventes/tab-bord-evol
     CardModule,
     GridModule,
     BadgeModule,
+    TableModule,
+    UtilitiesModule,
     DocsComponentsModule
   ]
 })

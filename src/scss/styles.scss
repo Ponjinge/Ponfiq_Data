@@ -24,3 +24,39 @@ $enable-rtl: true;
 
 // If you want to add something do it here
 @import "custom";
+
+
+h1{
+    font-size: 32px;
+    font-family: Playfair Display;
+    font-weight: bold;
+    
+    }
+h2{
+    font-size: 22px;
+    font-family: Playfair Display;
+        
+        }
+h3{
+    font-size: 18px;
+    font-family: Playfair Display;
+            
+            }
+p{
+    font-size: 18px;
+    font-family: Open Sans;
+}
+.navItems{
+    font-size: 20px;
+    font-family: Playfair Display;
+}
+.navSousItems{
+    font-size: 18px;
+    font-family: Playfair Display;
+}
+.àCentrer{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
