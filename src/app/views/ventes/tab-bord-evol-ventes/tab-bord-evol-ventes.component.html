@@ -1,5 +1,4 @@
 
-
 <c-col xs="12">
   <c-card class="àCentrer">
   <c-card-header>
@@ -24,20 +23,19 @@
 
       </c-card-header>
     </c-card>
-     
     <c-card class="mb-4">
       <c-card-header>
-        Quantité vendue par ville
+        CA par Horaire par catégorie de produit
       </c-card-header>
       <c-card-body>
-        <c-chart type="bar" [data]="chartBarData"></c-chart>
+        <c-chart type="line" [data]="chartLineData2"></c-chart>
       </c-card-body>
     </c-card>
   </c-col>
   <c-col xs="12" lg="6">
     <c-card class="mb-4">
       <c-card-header>
-        Courbe de la quantité commandée par produit
+        Evolution du CA
       </c-card-header>
       <c-card-body>
         <c-chart type="line" [data]="chartLineData"></c-chart>
@@ -60,10 +58,13 @@
   <c-col xs="12">
   <c-card class="mb-4">
     <c-card-header>
-      <strong>Angular Table</strong>
+      <strong>Angular Table</strong> <small>Basic example</small>
     </c-card-header>
     <c-card-body>
-     
+      <p class="text-medium-emphasis small">
+        Using the most basic table CoreUI, here&#39;s how <code>cTable</code>-based
+        tables look in CoreUI.
+      </p>
       <app-docs-example href="components/ventes">
         <table cTable>
           <thead>
