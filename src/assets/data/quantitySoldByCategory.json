@@ -1,0 +1,15 @@
+[
+    {"Period":"2019","Batteries":"58647","Charging Cables":"47192","Headphones":"49664","Laptops":"8855","Laundry Machines":"1312","Monitors":"28933","Phones":"1445","Total":"209038"},
+    {"Period":"Jan","Batteries":"3019","Charging Cables":"2432","Headphones":"2554","Laptops":"451","Laundry Machines":"81","Monitors":"1503","Phones":"822","Total":"10862"},
+    {"Period":"Feb","Batteries":"3707","Charging Cables":"3153","Headphones":"3132","Laptops":"551","Laundry Machines":"78","Monitors":"1879","Phones":"949","Total":"13449"},
+    {"Period":"Mar","Batteries":"4695","Charging Cables":"3817","Headphones":"4184","Laptops":"724","Laundry Machines":"113","Monitors":"2297","Phones":"1175","Total":"17005"},
+    {"Period":"Apr","Batteries":"5760","Charging Cables":"4642","Headphones":"4871","Laptops":"844","Laundry Machines":"139","Monitors":"2809","Phones":"1493","Total":"20558"},
+    {"Period":"May","Batteries":"5311","Charging Cables":"4143","Headphones":"4417","Laptops":"836","Laundry Machines":"140","Monitors":"2515","Phones":"1305","Total":"18667"},
+    {"Period":"Jun","Batteries":"4258","Charging Cables":"3362","Headphones":"3624","Laptops":"670","Laundry Machines":"98","Monitors":"2162","Phones":"1079","Total":"15253"},
+    {"Period":"Jul","Batteries":"4436","Charging Cables":"3660","Headphones":"3845","Laptops":"687","Laundry Machines":"107","Monitors":"2278","Phones":"1059","Total":"16072"},
+    {"Period":"Aug","Batteries":"3849","Charging Cables":"2905","Headphones":"3181","Laptops":"573","Laundry Machines":"94","Monitors":"1903","Phones":"943","Total":"13448"},
+    {"Period":"Sep","Batteries":"3694","Charging Cables":"3026","Headphones":"3098","Laptops":"537","Laundry Machines":"76","Monitors":"1814","Phones":"864","Total":"13109"},
+    {"Period":"Oct","Batteries":"6303","Charging Cables":"5239","Headphones":"5410","Laptops":"986","Laundry Machines":"111","Monitors":"3138","Phones":"1516","Total":"22703"},
+    {"Period":"Nov","Batteries":"5650","Charging Cables":"4466","Headphones":"4699","Laptops":"814","Laundry Machines":"109","Monitors":"2725","Phones":"1335","Total":"19798"},
+    {"Period":"Dec","Batteries":"7965","Charging Cables":"6337","Headphones":"6649","Laptops":"1182","Laundry Machines":"166","Monitors":"3910","Phones":"1905","Total":"28114"}
+    ]
