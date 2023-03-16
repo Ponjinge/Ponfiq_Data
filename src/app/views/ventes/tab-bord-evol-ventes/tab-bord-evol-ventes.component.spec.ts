@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { CardModule, GridModule } from '@coreui/angular';
+import { CardModule, GridModule, TableModule,UtilitiesModule } from '@coreui/angular';
 import { ChartjsModule } from '@coreui/angular-chartjs';
 import { IconSetService } from '@coreui/icons-angular';
 import { iconSubset } from '../../../icons/icon-subset';
@@ -14,7 +14,7 @@ describe('TabBordEvolVentesComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [TabBordEvolVentesComponent],
-      imports: [GridModule, CardModule, DocsComponentsModule, ChartjsModule],
+      imports: [GridModule, CardModule, DocsComponentsModule, ChartjsModule, UtilitiesModule, TableModule],
       providers: [IconSetService]
     }).compileComponents();
   }));
