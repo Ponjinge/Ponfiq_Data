@@ -1,73 +1,99 @@
-<c-row>
-    <c-col xs="12">
-      <app-docs-callout href="clients/tab-bord-cli" name="tab-bord-cli">
-        Angular wrapper component for Chart.js 3.6, the most popular charting library.
-        <br>
-      </app-docs-callout>
-    </c-col>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-        <c-card-header>
-          Bar Chart
-        </c-card-header>
-        <c-card-body>
-          <c-chart type="bar" [data]="chartBarData"></c-chart>
-        </c-card-body>
-      </c-card>
-    </c-col>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-        <c-card-header>
-          Line Chart
-        </c-card-header>
-        <c-card-body>
-          <c-chart type="line" [data]="chartLineData"></c-chart>
-        </c-card-body>
-      </c-card>
-    </c-col>
-  </c-row>
-  <c-row>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-        <c-card-header>
-          Doughnut Chart
-        </c-card-header>
-        <c-card-body>
-          <c-chart type="doughnut" [data]="chartDoughnutData"></c-chart>
-        </c-card-body>
-      </c-card>
-    </c-col>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-        <c-card-header>
-          Pie Chart
-        </c-card-header>
-        <c-card-body>
-          <c-chart type="pie" [data]="chartPieData"></c-chart>
-        </c-card-body>
-      </c-card>
-    </c-col>
-  </c-row>
-  <c-row>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-        <c-card-header>
-          Polar Area Chart
-        </c-card-header>
-        <c-card-body>
-          <c-chart type="polarArea" [data]="chartPolarAreaData"></c-chart>
-        </c-card-body>
-      </c-card>
-    </c-col>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-        <c-card-header>
-          Radar Chart
-        </c-card-header>
-        <c-card-body>
-          <c-chart type="radar" [data]="chartRadarData"></c-chart>
-        </c-card-body>
-      </c-card>
-    </c-col>
-  </c-row>
 
+<c-col xs="12">
+  <c-card class="àCentrer">
+  <c-card-header>
+    
+   <h1>Clients</h1>
+
+  </c-card-header>
+  <br>
+  <c-card-header>
+    
+    <h2>Tableau de Bord des Clients</h2>
+ 
+   </c-card-header>
+   <br>
+
+<c-row>
+    <c-col xs="12" lg="6">
+      <c-card class="mb-4">
+      <c-card-header>
+       <p>TEXT</p>
+
+      </c-card-header>
+    </c-card>
+     
+    <c-card class="mb-4">
+      <c-card-header>
+        Quantité vendue par ville
+      </c-card-header>
+      <c-card-body>
+        <c-chart type="bar" [data]="chartBarData"></c-chart>
+      </c-card-body>
+    </c-card>
+  </c-col>
+  <c-col xs="12" lg="6">
+    <c-card class="mb-4">
+      <c-card-header>
+        Courbe de la quantité commandée par produit
+      </c-card-header>
+      <c-card-body>
+        <c-chart type="line" [data]="chartLineData"></c-chart>
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>
+<c-row>
+  
+  <c-col xs="12" lg="6">
+    <c-card class="mb-4">
+      <c-card-header>
+        Courbe de l'évolution des quantités commandées
+      </c-card-header>
+      <c-card-body>
+        <c-chart type="pie" [data]="chartPieData"></c-chart>
+      </c-card-body>
+    </c-card>
+  </c-col>
+  <c-col xs="12">
+  <c-card class="mb-4">
+    <c-card-header>
+      <strong>Angular Table</strong>
+    </c-card-header>
+    <c-card-body>
+     
+      <app-docs-example href="components/ventes">
+        <table cTable>
+          <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Class</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colSpan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          </tbody>
+        </table>
+      </app-docs-example>
+    </c-card-body>
+  </c-card>
+</c-col>
+</c-row>

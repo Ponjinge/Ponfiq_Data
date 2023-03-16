@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { BadgeModule, CardModule, GridModule } from '@coreui/angular';
+import { BadgeModule, CardModule, GridModule, TableModule, UtilitiesModule } from '@coreui/angular';
 import { ChartjsModule } from '@coreui/angular-chartjs';
 
 import { ProduitsRoutingModule } from './produits-routing.module';
@@ -23,7 +23,9 @@ import { TabBordProdComponent } from './tab-bord-prod/tab-bord-prod.component';
     CardModule,
     GridModule,
     BadgeModule,
-    DocsComponentsModule
+    DocsComponentsModule,
+    TableModule,
+    UtilitiesModule,
   ]
 })
 export class ProduitsModule {}

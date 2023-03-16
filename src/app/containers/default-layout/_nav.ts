@@ -11,7 +11,7 @@ export const navItems: INavData[] = [
       text: 'NEW'
     }
   },
-  {
+/**{
     class:"navItems",
     name: 'NotreDashboard',
     url: '/notreDashboard',
@@ -40,7 +40,7 @@ export const navItems: INavData[] = [
     class:"navItems",
     name: 'Components',
     title: true
-  },
+  },*/
   {
     class:"navItems",
     name: 'Ventes',
@@ -113,7 +113,7 @@ export const navItems: INavData[] = [
       },
     ]
   },
-  {
+ /**  {
     class:"navItems",
     name: 'Base',
     url: '/base',
@@ -372,4 +372,5 @@ export const navItems: INavData[] = [
       }
     ]
   },
+  */
 ];
