@@ -1,28 +1,41 @@
 
 <c-col xs="12">
-  <c-card class="àCentrer">
-  <c-card-header>
+  <c-card >
+    <app-docs-callout href="charts">
+      <h1>Ventes</h1>      
+    </app-docs-callout>
     
-   <h1>Ventes</h1>
+   
 
-  </c-card-header>
+  
   <br>
-  <c-card-header>
-    
+  <c-col xs="12" lg="6">
+  <c-card >
     <h2>Tableau de Bord des Ventes</h2>
- 
-   </c-card-header>
+  </c-card >
+</c-col>
    <br>
 
 <c-row>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-      <c-card-header>
-        <p>Des publicités pourront avoir un effet maximal si elles sont diffusées à 19h ou voire même à midi. Tous les produits ont leur sommet de ventes pour la journée à une heure près de ces heures-là. </p>
-        <p>La majeure partie du chiffre d'affaire est dûe à la vente d'ordinateurs portables, et ensuite à celle des téléphones portables. Notre recommandation serait de commencer à vendre plus d'ordinateurs et portables, et si besoin d'abandonner la vente du Vareebadd Phone et des machines à laver. </p>
-
-      </c-card-header>
-    </c-card>
+  <c-col xs="12" lg="6">
+    <c-card class="mb-4">
+    <c-card-header>
+      <p>		
+        Produit le plus vendu: 	AAA Batteries (4-pack)</p> 	
+       <p>Nombre de ventes:	31017	</p><br>
+            
+        <p>Meilleur Mois pour les ventes: 	Dec	</p>
+        <p>Chiffre d'affaires pour ce mois:	 $4,613,443.34 	</p><br>
+            
+        <p>Ville ayant le plus gros nombre de produits vendus:	 San Francisco	</p>
+        <p>Nombre de produits vendus dans cette ville:	13963	</p><br>
+            
+        <p>Heure avec le plus de ventes: 	19	h</p>
+        <p>Chiffre d'affaires de ventes à cette heure:	 2,412,938.54 </p>
+       <br>
+    </c-card-header>
+  </c-card>
+   
     <c-card class="mb-4">
       <c-card-header>
         CA par Horaire par catégorie de produit
@@ -42,61 +55,64 @@
       </c-card-body>
     </c-card>
   </c-col>
-</c-row>
-<c-row>
+
   
   <c-col xs="12" lg="6">
     <c-card class="mb-4">
       <c-card-header>
-        Courbe de l'évolution des quantités commandées
+        Répartition du CA 
       </c-card-header>
       <c-card-body>
         <c-chart type="pie" [data]="chartPieData"></c-chart>
       </c-card-body>
     </c-card>
   </c-col>
+  <c-col xs="12" lg="6">
+    <c-card class="mb-4">
+    <c-card-header>
+      <p>Des publicités pourront avoir un effet maximal si elles sont diffusées à 19h ou voire même à midi. Tous les produits ont leur sommet de ventes pour la journée à une heure près de ces heures-là. </p>
+      <p>La majeure partie du chiffre d'affaire est dûe à la vente d'ordinateurs portables, et ensuite à celle des téléphones portables. Notre recommandation serait de commencer à vendre plus d'ordinateurs et portables, et si besoin d'abandonner la vente du Vareebadd Phone et des machines à laver. </p>
+
+    </c-card-header>
+  </c-card>
   <c-col xs="12">
   <c-card class="mb-4">
     <c-card-header>
-      <strong>Angular Table</strong> <small>Basic example</small>
+      <strong>Meilleurs Ventes</strong>
     </c-card-header>
     <c-card-body>
-      <p class="text-medium-emphasis small">
-        Using the most basic table CoreUI, here&#39;s how <code>cTable</code>-based
-        tables look in CoreUI.
-      </p>
-      <app-docs-example href="components/ventes">
+      
         <table cTable>
           <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Class</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
+            <th scope="col">Produits</th>
+            <th scope="col">Chiffre d'affaires</th>
+            <th scope="col">Categorie</th>
           </tr>
           </thead>
           <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>Macbook</td>
+            <td>$8035900</td>
+            <td>Laptops</td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>iPhone</td>
+            <td>$4792900</td>
+            <td>Phones</td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td colSpan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <td>ThinkPad Laptop</td>
+            <td>$4127959</td>
+            <td>Laptops</td>
           </tr>
           </tbody>
         </table>
-      </app-docs-example>
+      
     </c-card-body>
   </c-card>
 </c-col>
-</c-row>
