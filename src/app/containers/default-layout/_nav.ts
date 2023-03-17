@@ -46,7 +46,7 @@ export const navItems: INavData[] = [
     children: [
       {
         class:"navSousItems",
-        name: "TDB Ventes",
+        name: "Evolution des Ventes",
         url: '/ventes/tab-bord-evol-ventes'
       },
     ]
@@ -59,7 +59,7 @@ export const navItems: INavData[] = [
     children: [
       {
         class:"navSousItems",
-        name: 'TDB Produits',
+        name: 'Analyse des Produits',
         url: '/produits/tab-bord-prod'
       },
       {
@@ -86,7 +86,7 @@ export const navItems: INavData[] = [
     children: [
       {
         class:"navSousItems",
-        name: 'TDB Clients',
+        name: 'Stats Clients',
         url: '/clients/tab-bord-cli'
       },
       {
