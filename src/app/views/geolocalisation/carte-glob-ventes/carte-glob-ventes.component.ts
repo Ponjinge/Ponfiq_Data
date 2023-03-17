@@ -8,131 +8,164 @@ import { Component } from '@angular/core';
 export class CarteGlobVentesComponent {
 
 
-
-  months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  a = '#FF6384';
+  b = '#4BC0C0';
+  c = '#FFCE56';
+  d = '#E7E9ED';
+  e = '#36A2EB';
+  f = 'rgba(151, 187, 205, 1)';
+  g = '#321fdb';
 
   chartBarData = {
-    labels: [...this.months].slice(0, 7),
+    labels: [ 'Austin',
+      'Portland',
+      'Seattle',
+      'Atlanta',
+      'Dallas',
+      'Boston',
+      'New York City',
+      'Los Angeles',
+      'San Francisco'
+     ],
     datasets: [
       {
-        label: 'GitHub Commits',
+        label: 'quantité vendue',
         backgroundColor: '#f87979',
-        data: [40, 20, 12, 39, 17, 42, 79]
+        data: [11153,
+          14053,
+          16553,
+          16602,
+          16730,
+          22528,
+          27932,
+          33289,
+          50239
+          ]
       }
     ]
   };
 
-  // chartBarOptions = {
-  //   maintainAspectRatio: false,
-  // };
-
-  chartLineData = {
-    labels: [...this.months].slice(0, 7),
-    datasets: [
+  chartBarData2 = {
+    labels: [ 'Austin',
+      'Portland',
+      'Seattle',
+      'Atlanta',
+      'Dallas',
+      'Boston',
+      'New York City',
+      'Los Angeles',
+      'San Francisco'
+     ],
+     datasets: [
       {
-        label: 'My First dataset',
-        backgroundColor: 'rgba(220, 220, 220, 0.2)',
-        borderColor: 'rgba(220, 220, 220, 1)',
-        pointBackgroundColor: 'rgba(220, 220, 220, 1)',
-        pointBorderColor: '#fff',
-        data: [this.randomData, this.randomData, this.randomData, this.randomData, this.randomData, this.randomData, this.randomData]
+        label: 'Batteries',
+        backgroundColor: this.a,
+        
+        data: [3092,
+          4019,
+          4625,
+          4552,
+          4765,
+          6477,
+          7754,
+          9405,
+          13963
+          ]
       },
       {
-        label: 'My Second dataset',
-        backgroundColor: 'rgba(151, 187, 205, 0.2)',
-        borderColor: 'rgba(151, 187, 205, 1)',
-        pointBackgroundColor: 'rgba(151, 187, 205, 1)',
-        pointBorderColor: '#fff',
-        data: [this.randomData, this.randomData, this.randomData, this.randomData, this.randomData, this.randomData, this.randomData]
-      }
-    ]
-  };
-
-  chartLineOptions = {
-    maintainAspectRatio: false,
-  };
-
-  chartDoughnutData = {
-    labels: ['VueJs', 'EmberJs', 'ReactJs', 'Angular'],
-    datasets: [
-      {
-        backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
-        data: [40, 20, 80, 10]
-      }
-    ]
-  };
-
-  // chartDoughnutOptions = {
-  //   aspectRatio: 1,
-  //   responsive: true,
-  //   maintainAspectRatio: false,
-  //   radius: '100%'
-  // };
-
-  chartPieData = {
-    labels: ['Red', 'Green', 'Yellow'],
-    datasets: [
-      {
-        data: [300, 50, 100],
-        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-        hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
-      }
-    ]
-  };
-
-  // chartPieOptions = {
-  //   aspectRatio: 1,
-  //   responsive: true,
-  //   maintainAspectRatio: false,
-  //   radius: '100%'
-  // };
-
-  chartPolarAreaData = {
-    labels: ['Red', 'Green', 'Yellow', 'Grey', 'Blue'],
-    datasets: [
-      {
-        data: [11, 16, 7, 3, 14],
-        backgroundColor: ['#FF6384', '#4BC0C0', '#FFCE56', '#E7E9ED', '#36A2EB']
-      }
-    ]
-  };
-
-  chartRadarData = {
-    labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
-    datasets: [
-      {
-        label: '2020',
-        backgroundColor: 'rgba(179,181,198,0.2)',
-        borderColor: 'rgba(179,181,198,1)',
-        pointBackgroundColor: 'rgba(179,181,198,1)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgba(179,181,198,1)',
-        tooltipLabelColor: 'rgba(179,181,198,1)',
-        data: [65, 59, 90, 81, 56, 55, 40]
+        label: 'Charging Cables',
+        backgroundColor:this.b,
+        
+        data: [2558,
+          3113,
+          3644,
+          3794,
+          3716,
+          5052,
+          6310,
+          7554,
+          11451
+          ]
       },
       {
-        label: '2021',
-        backgroundColor: 'rgba(255,99,132,0.2)',
-        borderColor: 'rgba(255,99,132,1)',
-        pointBackgroundColor: 'rgba(255,99,132,1)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgba(255,99,132,1)',
-        tooltipLabelColor: 'rgba(255,99,132,1)',
-        data: [this.randomData, this.randomData, this.randomData, this.randomData, this.randomData, this.randomData, this.randomData]
+        label: 'Headphones',
+        backgroundColor: this.c,
+        
+        data: [2724,
+          3350,
+          3972,
+          3929,
+          3926,
+          5291,
+          6599,
+          7868,
+          12016
+          ]
+      },
+      {
+        label: 'Laptops',
+        backgroundColor:this.d,
+        
+        data: [461,
+          611,
+          689,
+          736,
+          727,
+          926,
+          1217,
+          1392,
+          2099
+          ]
+      },
+      {
+        label: 'Laundry Machines',
+        backgroundColor:this.e,
+        
+        data: [81,
+          74,
+          114,
+          111,
+          95,
+          131,
+          162,
+          221,
+          323
+          ]
+      },
+      {
+        label: 'Monitors',
+        backgroundColor: this.f,
+        
+        data: [1478,
+          1957,
+          2350,
+          2312,
+          2343,
+          3091,
+          3970,
+          4566,
+          6874
+          ]
+      },
+      {
+        label: 'Phones',
+        backgroundColor:  this.g,
+        
+        data: [759,
+        929,
+        1159,
+        1168,
+        1158,
+        1560,
+        1920,
+        2283,
+        3513
+        ]
       }
+      
     ]
   };
 
-  // chartRadarOptions = {
-  //   aspectRatio: 1.5,
-  //   responsive: true,
-  //   maintainAspectRatio: false,
-  // };
-
-  get randomData() {
-    return Math.round(Math.random() * 100);
-  }
+ 
 
 }

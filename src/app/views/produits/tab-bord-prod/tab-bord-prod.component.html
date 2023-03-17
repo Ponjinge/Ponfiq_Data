@@ -16,83 +16,102 @@
 
 <c-row>
     <c-col xs="12" lg="6">
-      <c-card class="mb-4">
+      <c-card>
       <c-card-header>
-        <p>TEXT</p>
+        <p>Les prix des produits ne changent pas entre janvier 2019 et janvier 2020, ils restent les mêmes pour tous les produits.</p>
+          <p>La courbe de la quantité achetée sur l’année par catégorie démontre que les machines à laver sont les produits les moins achetés, et la période de l’année n’a quasiment aucune incidence sur la quantité commandée, qui reste très basse.</p>
+          <br>
+          <p>Les batteries , écouteurs et cables restent les trois catégories dominantes tout au long de l'année, avec un écart significatif entre eux et les autres categories.</p> 
+          
+         <p> Apres l'analyse de la part des quantités vendues que chaque mois représente pour chaque catégorie, nous pouvons remarquer que les produits suivent tous la même tendance durant l'année. Une augmentation des ventes en Avril, suivi par une baisse jusqu'à une hausse forte en Octobre, puis encore en Décembre.
+          </p>
 
       </c-card-header>
     </c-card>
-     
-    <c-card class="mb-4">
+    </c-col>
+    <c-col xs="12" lg="6">
+    <c-card  class="mb-4">
       <c-card-header>
-        Quantité vendue par ville
+        Quantité de vente totale par Catégorie
       </c-card-header>
       <c-card-body>
         <c-chart type="bar" [data]="chartBarData"></c-chart>
       </c-card-body>
     </c-card>
   </c-col>
-  <c-col xs="12" lg="6">
-    <c-card class="mb-4">
+  </c-row>
+  <c-container></c-container>
+  <c-col xs="12">
+    <c-card  class="mb-4">
       <c-card-header>
-        Courbe de la quantité commandée par produit
+        Courbe de la quantité commandée par Catégorie
       </c-card-header>
       <c-card-body>
-        <c-chart type="line" [data]="chartLineData"></c-chart>
+        <c-chart type="line" [data]="chartLineData1"></c-chart>
       </c-card-body>
     </c-card>
   </c-col>
-</c-row>
+
 <c-row>
   
-  <c-col xs="12" lg="6">
+  <c-col xs="12">
     <c-card class="mb-4">
       <c-card-header>
-        Courbe de l'évolution des quantités commandées
+        Courbe de la répartition des ventes par catégorie
       </c-card-header>
       <c-card-body>
-        <c-chart type="pie" [data]="chartPieData"></c-chart>
+        <c-chart type="line" [data]="chartLineData2"></c-chart>
       </c-card-body>
     </c-card>
   </c-col>
   <c-col xs="12">
   <c-card class="mb-4">
     <c-card-header>
-      <strong>Angular Table</strong>
+      <strong>Produits par Quantité vendu </strong>
     </c-card-header>
     <c-card-body>
      
-      <app-docs-example href="components/ventes">
+      
         <table cTable>
           <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Class</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
+            <th scope="col">Produit</th>
+            <th scope="col">Prix</th>
+            <th scope="col">Quantité totale commandée</th>
           </tr>
           </thead>
           <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>AAA Batteries (4-pack)
+            </td>
+            <td>2.99
+            </td>
+            <td>31012
+            </td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>AA Batteries (4-pack)
+            </td>
+            <td>3.84
+            </td>
+            <td>27635
+            </td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td colSpan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <td>USB-C Charging Cable
+            </td>
+            <td>11.95
+            </td>
+            <td>23971
+            </td>
           </tr>
           </tbody>
         </table>
-      </app-docs-example>
+      
     </c-card-body>
   </c-card>
 </c-col>

@@ -1,99 +1,166 @@
-
 <c-col xs="12">
   <c-card class="àCentrer">
-  <c-card-header>
-    
-   <h1>Produits</h1>
-
-  </c-card-header>
-  <br>
-  <c-card-header>
-    
-    <h2>Liaison entre les Produits</h2>
- 
-   </c-card-header>
-   <br>
-
-<c-row>
-    <c-col xs="12" lg="6">
-      <c-card class="mb-4">
-      <c-card-header>
-        <p>TEXT</p>
-
-      </c-card-header>
-    </c-card>
-     
-    <c-card class="mb-4">
-      <c-card-header>
-        Quantité vendue par ville
-      </c-card-header>
-      <c-card-body>
-        <c-chart type="bar" [data]="chartBarData"></c-chart>
-      </c-card-body>
-    </c-card>
-  </c-col>
-  <c-col xs="12" lg="6">
-    <c-card class="mb-4">
-      <c-card-header>
-        Courbe de la quantité commandée par produit
-      </c-card-header>
-      <c-card-body>
-        <c-chart type="line" [data]="chartLineData"></c-chart>
-      </c-card-body>
-    </c-card>
-  </c-col>
-</c-row>
-<c-row>
-  
-  <c-col xs="12" lg="6">
-    <c-card class="mb-4">
-      <c-card-header>
-        Courbe de l'évolution des quantités commandées
-      </c-card-header>
-      <c-card-body>
-        <c-chart type="pie" [data]="chartPieData"></c-chart>
-      </c-card-body>
-    </c-card>
-  </c-col>
-  <c-col xs="12">
-  <c-card class="mb-4">
     <c-card-header>
-      <strong>Angular Table</strong>
+      <h1>Produits</h1>
     </c-card-header>
-    <c-card-body>
-     
-      <app-docs-example href="components/ventes">
-        <table cTable>
-          <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Class</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colSpan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          </tbody>
-        </table>
-      </app-docs-example>
-    </c-card-body>
-  </c-card>
-</c-col>
-</c-row>
+    <br />
+    <c-card-header>
+      <h2>Liaison entre les Produits</h2>
+    </c-card-header>
+    <br />
+
+    <c-row>
+      <c-col xs="12" lg="6">
+        <c-card class="mb-4">
+          <c-card-header>
+            <p>
+              Nous pouvons observer sur un échantillon du mois avec le plus de
+              ventes (Décembre), des liens de probabilité entre les achats des
+              clients.
+            </p>
+            <br />
+            <p>
+              En premier lieu nous pouvons observer les proportions de clients
+              ayant acheté des produits particuliers par rapport à tout nos
+              clients afin de juger une probabilité que le prochain achat soit
+              un de ces produits.
+            </p>
+            <br />
+            <p>Par exemple:</p>
+            <p>
+              On déduit une probabilité de 13% pour que la prochaine commande
+              contienne un chargeur type USB-C, 4% pour un iPhone, 3% pour un
+              Google Phone et 11% pour des écouteurs fillères.
+            </p>
+          </c-card-header>
+        </c-card>
+      </c-col>
+      <c-col xs="12" lg="6">
+        <c-card class="mb-4">
+          <c-card-header>
+            <strong>Ratio of Accounts having ordered products</strong>
+          </c-card-header>
+          <c-card-body>
+            <table cTable>
+              <thead>
+                <tr>
+                  <th scope="col">Products purchased</th>
+                  <th scope="col">Count</th>
+                  <th scope="col">Ratio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Unique Addresses</td>
+                  <td colSpan="2">23203</td>
+                </tr>
+                <tr>
+                  <td>USB-C Charging Cable</td>
+                  <td>2967</td>
+                  <td>13%</td>
+                </tr>
+                <tr>
+                  <td>iPhone</td>
+                  <td>712</td>
+                  <td>3%</td>
+                </tr>
+
+                <tr>
+                  <td>Google Phone</td>
+                  <td>712</td>
+                  <td>3%</td>
+                </tr>
+                <tr>
+                  <td>Wired Headphones</td>
+                  <td>2530</td>
+                  <td>11%</td>
+                </tr>
+              </tbody>
+            </table>
+          </c-card-body>
+        </c-card>
+      </c-col>
+    </c-row>
+    <c-row>
+      <c-col xs="12">
+        <c-card class="mb-4">
+          <c-card-header>
+            <p>
+              Cependant, après une analyse rigoureuse, nous pouvons conclure
+              grâce au tableau ci-dessous indiquant les combinaisons d'achats
+              des clients que souvent ces rapports sont à sens unique.
+              C'est-à-dire que certains produits sont liés à l'achat d'un autre
+              produit, toutefois ce dernier n'est pas forcément associé à
+              l'achat du premier. C'est une implication et non pas une
+              équivalence.
+            </p>
+            <br />
+            <p>Par example:</p>
+
+            <p>
+              L'achat d'un Google Phone implique une chance forte d'acheter un
+              chargeur USB-C, tandis que l'achat d'un chargeur USB-C n'a pas du
+              tout le même lien avec l'achat d'un téléphone Google par la suite.
+            </p>
+            <br />
+            <p>
+              Il est important de considérer la part (en %) que représentent ces
+              combinaisons sur la totalité d'achat d'un produit.
+            </p>
+          </c-card-header>
+        </c-card>
+      </c-col>
+      <c-col>
+        <c-card class="mb-4">
+          <c-card-header>Fréquence de combinaisons d'achats entre deux produits  </c-card-header>
+          <c-card-body>
+            <c-chart type="bar" [data]="chartBarData"></c-chart>
+          </c-card-body>
+        </c-card> </c-col>
+        <c-col xs="12" lg="6">
+          <c-card class="mb-4">
+            <c-card-header>
+              <p>
+                En observant ces 4 produits plus en détail, nous pouvons voir qu'il y a une fréquence importante de clients qui ont fait des achats de ces produits et un autre produit spécifique. 
+
+              </p>
+              <br />
+              <p>
+                Les achats d'iPhone sont souvent suivi d'un achat de chargeur Lightning.
+
+              </p>
+              
+              <p>Les achats de Google Phone,  de chargeurs USB-C et vice-versa.
+              </p>
+              <p>
+                Et les achats d'écouteurs filaires sont associés à des achats de téléphone Google, Apple, mais aussi à des achats de chargeurs USB-C. 
+
+              </p>
+            </c-card-header>
+          </c-card>
+        </c-col>
+        <c-col xs="12" lg="6">
+          <c-card class="mb-4">
+            <c-card-header>
+              <p>
+                Recommandations:
+
+              </p>
+              
+              <p>
+                -Suggérer des chargeurs appropriés à chaque type de téléphone lors de l'achat d'un appareil mobile. 
+
+              </p>
+              
+              
+              <p>
+
+                -Experimental: Suggérer des produits Apple aux acheteurs de produits Android, il y a une petite portion d'acheteurs de chargeur USB-C qui ont aussi acheté des chargeurs lightning, peut  s'averer rentable.
+
+              </p>
+            </c-card-header>
+          </c-card>
+        </c-col>
+      
+      </c-row></c-card
+></c-col>

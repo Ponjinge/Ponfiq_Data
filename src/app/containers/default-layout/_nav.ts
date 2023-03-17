@@ -3,13 +3,10 @@ import { INavData } from '@coreui/angular';
 export const navItems: INavData[] = [
   {
     class:"navItems",
-    name: 'Dashboard',
+    name: 'Accueil',
     url: '/dashboard',
     iconComponent: { name: 'cil-speedometer' },
-    badge: {
-      color: 'info',
-      text: 'NEW'
-    }
+    
   },
 /**{
     class:"navItems",
@@ -49,7 +46,7 @@ export const navItems: INavData[] = [
     children: [
       {
         class:"navSousItems",
-        name: "Tableau de bord de l'évolution des ventes",
+        name: "TDB Ventes",
         url: '/ventes/tab-bord-evol-ventes'
       },
     ]
@@ -62,13 +59,17 @@ export const navItems: INavData[] = [
     children: [
       {
         class:"navSousItems",
-        name: 'Tableau de bord des produits',
+        name: 'TDB Produits',
         url: '/produits/tab-bord-prod'
       },
       {
         class:"navSousItems",
         name: 'Analyse par produit',
-        url: '/produits/analyse-par-prod'
+        url: '/produits/analyse-par-prod',
+        badge: {
+          color: 'info',
+          text: 'Offline'
+        }
       },
       {
         class:"navSousItems",
@@ -85,13 +86,17 @@ export const navItems: INavData[] = [
     children: [
       {
         class:"navSousItems",
-        name: 'Tableau de bord des clients',
+        name: 'TDB Clients',
         url: '/clients/tab-bord-cli'
       },
       {
         class:"navSousItems",
         name: 'Profil des clients',
-        url: '/clients/profil-cli'
+        url: '/clients/profil-cli',
+        badge: {
+          color: 'info',
+          text: 'Offline'
+        }
       },
     ]
   },
@@ -109,7 +114,11 @@ export const navItems: INavData[] = [
       {
         class:"navSousItems",
         name: 'Analyse par ville',
-        url: '/geolocalisation/analyse-par-ville'
+        url: '/geolocalisation/analyse-par-ville',
+        badge: {
+          color: 'info',
+          text: 'Offline'
+        }
       },
     ]
   },

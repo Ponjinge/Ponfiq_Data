@@ -34,67 +34,58 @@
       </c-card-body>
     </c-card>
   </c-col>
-  <c-col xs="12" lg="6">
+  <c-col xs="12" >
     <c-card class="mb-4">
       <c-card-header>
-        Courbe de la quantité commandée par produit
+        Quantité  vendue par Ville par Catégorie de produit
       </c-card-header>
       <c-card-body>
-        <c-chart type="line" [data]="chartLineData"></c-chart>
+        <c-chart type="bar" [data]="chartBarData2"></c-chart>
       </c-card-body>
     </c-card>
   </c-col>
+  
 </c-row>
 <c-row>
   
-  <c-col xs="12" lg="6">
-    <c-card class="mb-4">
-      <c-card-header>
-        Courbe de l'évolution des quantités commandées
-      </c-card-header>
-      <c-card-body>
-        <c-chart type="pie" [data]="chartPieData"></c-chart>
-      </c-card-body>
-    </c-card>
-  </c-col>
+  
   <c-col xs="12">
-  <c-card class="mb-4">
+  <c-card>
     <c-card-header>
-      <strong>Angular Table</strong>
+      <strong>Villes par CA</strong>
     </c-card-header>
     <c-card-body>
      
-      <app-docs-example href="components/ventes">
+      
         <table cTable>
           <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Class</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
+            <th scope="col">Ville</th>
+            <th scope="col">CA</th>
+            
           </tr>
           </thead>
           <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>San Francisco</td>
+            <td>$8262203.91</td>
+            
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>Los Angeles</td>
+            <td>$5452570.80</td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td colSpan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <td>New York City</td>
+            <td>$4664317.43</td>
           </tr>
           </tbody>
         </table>
-      </app-docs-example>
+      
     </c-card-body>
   </c-card>
 </c-col>

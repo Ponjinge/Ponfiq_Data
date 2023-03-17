@@ -18,24 +18,17 @@
     <c-col xs="12" lg="6">
       <c-card class="mb-4">
       <c-card-header>
-       <p>TEXT</p>
-
+       <h2>NOMBRE DE CLIENTS:</h2>
+       <h1>140376</h1>
       </c-card-header>
     </c-card>
      
-    <c-card class="mb-4">
-      <c-card-header>
-        Quantité vendue par ville
-      </c-card-header>
-      <c-card-body>
-        <c-chart type="bar" [data]="chartBarData"></c-chart>
-      </c-card-body>
-    </c-card>
+    
   </c-col>
-  <c-col xs="12" lg="6">
+  <c-col>
     <c-card class="mb-4">
       <c-card-header>
-        Courbe de la quantité commandée par produit
+        Evolution du nombre de Clients
       </c-card-header>
       <c-card-body>
         <c-chart type="line" [data]="chartLineData"></c-chart>
@@ -45,54 +38,71 @@
 </c-row>
 <c-row>
   
-  <c-col xs="12" lg="6">
-    <c-card class="mb-4">
-      <c-card-header>
-        Courbe de l'évolution des quantités commandées
-      </c-card-header>
-      <c-card-body>
-        <c-chart type="pie" [data]="chartPieData"></c-chart>
-      </c-card-body>
-    </c-card>
-  </c-col>
+  
+  
   <c-col xs="12">
   <c-card class="mb-4">
     <c-card-header>
-      <strong>Angular Table</strong>
+      <strong>Plus Gros Acheteurs</strong>
     </c-card-header>
     <c-card-body>
      
-      <app-docs-example href="components/ventes">
+      
         <table cTable>
           <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Class</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
+            <th scope="col">Amount Spent </th>
+            <th scope="col">Address</th>
+            <th scope="col">Number of Orders</th>
           </tr>
           </thead>
           <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>4379.99
+            </td>
+            <td>668 Park St San Francisco
+            </td>
+            <td>4
+            </td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>4100
+            </td>
+            <td>391 1st St Seattle
+            </td>
+            <td>3</td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td colSpan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <td>4100
+            </td>
+            <td>795 1st St Atlanta
+            </td>
+            <td>3</td>
           </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>4000
+            </td>
+            <td>10 1st St San Francisco
+            </td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>4000
+            </td>
+            <td>790 Adams St Portland
+            </td>
+            <td>3</td>
+          </tr>
+          
           </tbody>
         </table>
-      </app-docs-example>
+      
     </c-card-body>
   </c-card>
 </c-col>
