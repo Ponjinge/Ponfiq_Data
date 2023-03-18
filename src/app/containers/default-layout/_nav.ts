@@ -62,7 +62,7 @@ export const navItems: INavData[] = [
         name: 'Analyse des Produits',
         url: '/produits/tab-bord-prod'
       },
-      {
+      /**{
         class:"navSousItems",
         name: 'Analyse par produit',
         url: '/produits/analyse-par-prod',
@@ -70,7 +70,7 @@ export const navItems: INavData[] = [
           color: 'info',
           text: 'Offline'
         }
-      },
+      },*/
       {
         class:"navSousItems",
         name: 'Liaison entre produits',
@@ -89,7 +89,7 @@ export const navItems: INavData[] = [
         name: 'Stats Clients',
         url: '/clients/tab-bord-cli'
       },
-      {
+      /**{
         class:"navSousItems",
         name: 'Profil des clients',
         url: '/clients/profil-cli',
@@ -97,7 +97,7 @@ export const navItems: INavData[] = [
           color: 'info',
           text: 'Offline'
         }
-      },
+      },*/
     ]
   },
   {
@@ -111,7 +111,7 @@ export const navItems: INavData[] = [
         name: 'Carte globale des ventes',
         url: '/geolocalisation/carte-glob-ventes'
       },
-      {
+      /**{
         class:"navSousItems",
         name: 'Analyse par ville',
         url: '/geolocalisation/analyse-par-ville',
@@ -119,7 +119,7 @@ export const navItems: INavData[] = [
           color: 'info',
           text: 'Offline'
         }
-      },
+      },*/
     ]
   },
  /**  {
