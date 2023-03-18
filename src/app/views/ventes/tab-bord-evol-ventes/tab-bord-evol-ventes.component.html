@@ -1,4 +1,3 @@
-
 <c-col xs="12">
   <c-card >
     <app-docs-callout href="charts">
@@ -20,25 +19,55 @@
   <c-col xs="12" lg="6">
     <c-card class="mb-4">
     <c-card-header>
-      <p>		
-        Produit le plus vendu: 	AAA Batteries (4-pack)</p> 	
-       <p>Nombre de ventes:	31017	</p><br>
-            
-        <p>Meilleur Mois pour les ventes: 	Dec	</p>
-        <p>Chiffre d'affaires pour ce mois:	 $4,613,443.34 	</p><br>
-            
-        <p>Ville ayant le plus gros nombre de produits vendus:	 San Francisco	</p>
-        <p>Nombre de produits vendus dans cette ville:	13963	</p><br>
-            
-        <p>Heure avec le plus de ventes: 	19	h</p>
-        <p>Chiffre d'affaires de ventes à cette heure:	 2,412,938.54 </p>
+      <table>
+      <tr>		
+        <td><strong>Produit le plus vendu:</strong></td> 	
+        <td>AAA Batteries (4-pack)</td>
+      </tr>
+      <br>
+      <tr>
+       <td><strong>Nombre de ventes:</strong></td>
+       <td>31017</td>
+      </tr>
+       <br>     
+       <tr>
+        <td><strong>Meilleur Mois pour les ventes:</strong></td> 	
+        <td>Décembre</td>
+      </tr>
+      <br>
+      <tr>
+        <td><strong>Chiffre d'affaires pour ce mois:</strong></td>
+        <td>$4,613,443.34</td>
+      </tr>
+        <br>
+      <tr>      
+        <td><strong>Ville ayant le plus gros nombre de produits vendus:</strong></td>
+        <td>San Francisco	</td>
+      </tr>
+      <br>
+      <tr>
+        <td><strong>Nombre de produits vendus dans cette ville:</strong></td>
+        <td>	13963	</td>
+     
+    </tr> 
+      <br> 
+    <tr>  
+        <td><strong>Heure avec le plus de ventes:</strong></td>
+        <td>19 h</td>
+    </tr>
+    <br>
+    <tr>
+        <td><strong>Chiffre d'affaires de ventes à cette heure:</strong></td>
+        <td>2,412,938.54 </td>
+    </tr>
+       </table>
        <br>
     </c-card-header>
   </c-card>
    
     <c-card class="mb-4">
       <c-card-header>
-        CA par Horaire par catégorie de produit
+        <H3>CA par Horaire par catégorie de produit</H3>
       </c-card-header>
       <c-card-body>
         <c-chart type="line" [data]="chartLineData2"></c-chart>
@@ -48,7 +77,7 @@
   <c-col xs="12" lg="6">
     <c-card class="mb-4">
       <c-card-header>
-        Evolution du CA
+        <h3>Evolution du CA</h3>
       </c-card-header>
       <c-card-body>
         <c-chart type="line" [data]="chartLineData"></c-chart>
@@ -60,7 +89,7 @@
   <c-col xs="12" lg="6">
     <c-card class="mb-4">
       <c-card-header>
-        Répartition du CA 
+        <h3>Répartition du CA</h3>
       </c-card-header>
       <c-card-body>
         <c-chart type="pie" [data]="chartPieData"></c-chart>
